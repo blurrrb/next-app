@@ -1,5 +1,9 @@
 import Image from 'next/image'
 
+export const config = {
+  runtime: 'edge'
+}
+
 async function getTime() {
   const res = await fetch("https://worldtimeapi.org/api/timezone/Asia/Kolkata", {
     next: {
